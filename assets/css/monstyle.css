@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../image/img.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.titre h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0px 0 30px 0;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* .titre li {
+  list-style-type: circle;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+} */
+
+/* Container du Jeux */
+
+.game {
+  margin: auto;
+  border: 2px solid black;
+  height: 100%;
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.game .timer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../image/overlay.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay h1 {
+  color: white;
+  font-size: 6rem;
+  margin-bottom: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.start {
+  background: rgb(1, 1, 207);
+  border-radius: 50%;
+  border: none;
+  width: 120px;
+  height: 120px;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  border: 5px solid rgb(0, 0, 253);
+  box-shadow: 1px 1px 1px 1px;
+}
+/* Arriver */
+.sol {
+  box-sizing: border-box;
+  background-color: rgb(0, 162, 255);
+  background-size: cover;
+  height: 50px;
+  width: 100%;
+}
+
+/* Route et Voiture */
+/* 1_ROUTE */
+.route {
+  box-sizing: border-box;
+  background-color: darkgrey;
+  height: 60%;
+  width: 100%;
+}
+
+.lane {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px dashed white;
+}
+
+/* 2_VOITURE */
+
+.car {
+  background-color: brown;
+  border: 1px solid black;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  display: inline-block;
+}
+
+/* personnage */
+
+.frog {
+  background-color: greenyellow;
+  border: 1px solid black;
+  position: absolute;
+}
+
+#boutonCV {
+  padding-left: 20px;
+  text-align: center;
+}
+#boutonCV button a {
+  color: black;
+  text-decoration: none;
+}
+#boutonCV button a:hover {
+  font-size: 1.2rem;
+}
+
+ul {
+  margin: 70px auto 70px;
+}
+
+.drop {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+li {
+  list-style-type: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+}

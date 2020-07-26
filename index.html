@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/monstyle.css" />
+    <title>Jeu CV</title>
+  </head>
+  <body>
+    <div id="acceuil" class="container-fluid bloc_principal">
+      <div class="row">
+        <div class="col-6 offset-3 titre">
+          <h1><img src="assets/image/logo.png" alt="logo" ></h1>
+        </div>
+      </div>
+          <!-- Container du Jeux -->
+      <div class="game">
+        <div class="timer">
+          <span class="level">Niveau 0</span>
+          <span class="time">00 min : 00 sec</span>
+        </div>
+        <div class="overlay"></div>
+        <div class="sol"></div>
+        <div class="route">
+          <div class="lane"></div>
+          <div class="lane"></div>
+          <div class="lane"></div>
+          <div class="lane"></div>
+          <div class="lane"></div>
+          <div class="lane"></div>
+        </div>
+        <div class="sol"></div>
+      </div>
+         <!---fin GAME-->
+        <div style="display: flex;justify-content: center;">
+         <ul>
+          <li><img src="assets/image/eau.png" class="drop">Essayez de faire traverser la rue à la grenouille</li>
+          <li><img src="assets/image/eau.png" class="drop">Attention à ne pas de se faire écraser !</li>
+          <li><img src="assets/image/eau.png" class="drop">Plusieurs niveaux de difficultés</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-2 offset-5" id="boutonCV" >
+          <button
+              class="btn btn btn-md"
+          ><a href="assets/image/CV.Mathieu.Garel.Développeur.Web.pdf" target="blank"> Accéder au CV sans jouer</a>  
+          </button>
+        </div>
+      </div>
+    </div>
+
+      
+    </div>
+
+    <!--1 jQuery en premier!!!! -->
+    <script src="vendors/jquery/jquery.js"></script>
+    <!--2 Popper.js -->
+    <script src="vendors/popper/popper.min.js"></script>
+    <!-- 3  Bootstrap en js !!-->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS -->
+    <script src="assets/js/monjavascript.js"></script>
+    <script id="frog" src="assets/js/frog.js"></script>
+  </body>
+</html>
